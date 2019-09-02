@@ -1,0 +1,228 @@
+.contenedor {
+  margin:0;
+  padding: 0;
+  width:100%;
+}
+body{
+  background-color: #02010a;
+  font-family:"Dancing Script";
+}
+@keyframes slidein {
+  0%{margin-top: 150%}
+  60%{margin-top:-5%}
+  100%{margin-top: 0%}
+}
+.imagenCentral  {
+  background-color: #82c3a6;
+  padding-left:5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.imagenesSecundarias{
+  background-color: #d5c75f;
+  padding-left:5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.imagenesSecundarias a{
+  text-decoration: none;
+}
+.imagenesSecundarias img, .galeria img{
+  border: 1px solid black;
+}
+.galeria img {
+  margin-bottom: 10px;
+}
+
+.imagenesSecundarias p{
+  text-align:center;
+  color: #000;
+  font-size: 30px;
+}
+
+/* aca comienzan los efectos de las fotos por id ...............................................*/
+
+#picsec1:hover{
+  transform:rotate(-10deg);
+  border:2px;
+  box-shadow:2px  2px #82c3a6;
+}
+#picSec2:hover{
+  transform: translate(-20px,5px);
+  box-shadow:2px  2px #82c3a6;
+  border:2px;
+
+}
+
+#picsec1{
+  margin-top: 20px;
+}
+#paisajes1{
+  filter: blur(10px);
+}
+#paisajes2, #paisajes4, #paisajes6 {
+  filter: grayscale(100%);
+}
+
+#paisajes3 {
+  filter: sepia(90%);
+}
+/*............................................................................................*/
+
+img {
+  width: 100%;
+  box-shadow:2px  2px #02010a;
+}
+
+.galeria {
+  background-color: #d5c75f;
+  padding-left:5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+
+h3{
+  font-size:30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  word-wrap: break-word;
+  text-align: center;
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  color:#fff;
+  text-shadow: 2px 2px 2px #02010a;
+  width: 100%;
+  height: 7em;
+  animation-name: slidein;
+  animation-duration: 1s;
+}
+header a{
+  color: inherit;
+}
+
+nav{
+  word-spacing: 10px;
+  color:inherit;
+}
+
+h2,footer a{
+  display: inline;
+  color:inherit;
+  text-decoration:none;
+}
+
+a:hover{
+  color:gray;
+}
+
+footer{
+  background-color: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+}
+
+#red1::before {
+  content: url("imagenes/linkedin-logo@logotyp.us.svg");
+  display: inline-block;
+  position: relative;
+  top:10px;
+  width: 40px;
+  height: auto;
+}
+#red2::before {
+  content: url("imagenes/facebook-logo@logotyp.us.svg");
+  display: inline-block;
+  position: relative;
+  top:7px;
+  left:0px;
+  width: 40px;
+height: auto;
+}
+#red3::before {
+  content: url("imagenes/instagram-logo@logotyp.us.svg");
+  display: inline-block;
+  position: relative;
+  top:10px;
+  left:2px;
+  width: 40px;
+  height: auto;
+}
+#red4::before {
+  content: url("imagenes/twitter-logo@logotyp.us.svg");
+  display: inline-block;
+  position: relative;
+  top:10px;
+  left:5px;
+  width:40px;
+  height: auto;
+}
+
+.footercont{
+  margin-left: 5%;
+}
+
+ .derechos img {
+   width: 15px;
+   box-shadow: none;
+   margin-left:5px;
+ }
+ .footercont {
+     display: flex;
+     flex-flow: column nowrap;
+     justify-content: space-around;
+   }
+   .redescont{
+     position:relative;
+     bottom:20px;
+   }
+/* query para mas de 900 px............................................*/
+@media  (min-width:900px){
+
+  header {
+    text-align: left;
+    text-indent: 20px;
+    word-wrap: normal;
+  }
+
+header div h1{
+  padding-top: 30px;
+}
+header div nav {
+  top: 60px;
+  right: 20px;
+}
+
+.imagenesSecundarias {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+ .galeria {
+  display: flex;
+}
+.col1, .col2, .col3 {
+  margin-right: 20px;
+}
+
+#picsec1{
+  margin.right:80px;
+
+}
+#picSec2{
+  margin-left: 30px;
+}
+
+.footercont {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+
+}
